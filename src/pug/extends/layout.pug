@@ -1,0 +1,40 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		title Green Valley
+		link(rel='stylesheet', href='../css/style.css')
+		link(rel='stylesheet', href='../css/normalize.css')
+	body
+		header.page-header
+			.page-header__inner
+				a.logo(href='index.html')
+					img.logo__icon(src='', alt='')
+				nav.main-nav
+					ul.main-nav__list
+						li.main-nav__item
+							a.main-nav__link(href='room-list.html') номера
+						li.main-nav__item
+							a.main-nav__link(href='#') коттедж
+						li.main-nav__item
+							a.main-nav__link(href='#') ресторан
+						li.main-nav__item
+							a.main-nav__link(href='#') отдых
+						li.main-nav__item
+							a.main-nav__link(href='#') контакты
+				.page-header__contacts
+					a.page-header__tel(href='#') +7 812 777-55-88
+					.page-header__address г. Санкт-Петербург, Приморское ш.600
+				a.btn(href='form.html') забронировать
+		main
+			block main
+
+		footer.page-footer
+			.page-footer__inner
+				.page-footer__address г. Санкт-Петербург Приморское ш. 600
+				a.logo(href='#')
+				.page-footer__connect
+					span
+						| +7 812 777-55-88 
+						br
+						| 				info@greenvalley.ru

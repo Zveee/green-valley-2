@@ -1,0 +1,41 @@
+extends extends/layout.pug
+
+block main
+	section.booking
+		.booking__inner
+			h1.booking__title Бронирование
+			p.booking__about
+				| Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону: +7 812 777-55-88
+			section.step1
+				.step1__inner
+					h2.step1__title Дата отдыха
+					.step1__date
+						.date__in
+						.date__out
+			section.step2
+				.step2__inner
+					h2.step2__title Место проживания
+					.step2__place
+						span.place__hotel
+						span.place__cottage
+			section.step3
+				.step3__inner
+					h2.step3__title Тип коттеджа
+					ul.step3__list
+						li.step3__item флагман
+						li.step3__item озёрный
+						li.step3__item ольховка
+						li.step3__item портовый
+					ul.step3__list
+						li.step3__item
+							| площадь 100 м
+							sup 2
+						li.step3__item 3 комнаты
+						li.step3__item 5 спальных мест
+						li.step3__item раздельный узел
+						li.step3__item WI-FI
+			section.step4
+				.step4__inner
+					h2.step4__title Персональная информация
+					form.step4__form(action='')
+						| input.form

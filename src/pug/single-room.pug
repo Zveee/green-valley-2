@@ -1,0 +1,56 @@
+extends extends/layout.pug
+
+block main
+	section.econom-room
+		.econom-room__inner
+			h1.econom-room__title Эконом
+			span.econom-room__price от 3400 руб./сутки
+			.econom-room__about
+				.about
+					h2.about__title О номере
+					p.about__text
+						| В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны на проживание 1-2 человек. Часть номеров с видом на Финский залив.
+					h2.about__title Удобства
+					ul.about__list
+						li.list__item WI-FI
+						li.list__item Двуспальная кровать
+						li.list__item Кресло
+						li.list__item Раскладывающийся диван
+						li.list__item Фен
+						li.list__item Рабочий стол
+						li.list__item Шкаф для одежды
+						li.list__item Багажная тумба
+						li.list__item Сейф
+					h2.about__title В стоимость входит
+					ul.about__list
+						li.list__item Бассейн с 8.30 до 10.00
+						li.list__item Завтрак и обед "шведский стол"
+			.gallery__inner
+				img.gallery__full-photo(src='', alt='')
+				.gallery__slider
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+			.econom-room__gallery
+				.gallery__slider
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+		a.btn(href='#') забронировать
+		span.econom-room__price от 3400 руб./сутки
+	section.options
+		.options__inner
+			nav.options__nav
+				ul.options__nav-list
+					li.nav-list__item
+						a.nav-list__link(href='#') Стандарт
+					li.nav-list__item
+						a.nav-list__link(href='#') Стандарт +
+					li.nav-list__item
+						a.nav-list__link(href='#') Люкс

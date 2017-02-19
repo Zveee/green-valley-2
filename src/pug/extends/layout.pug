@@ -7,34 +7,41 @@ html(lang='ru')
 		link(rel='stylesheet', href='../css/normalize.css')
 	body
 		header.page-header
-			.page-header__inner
-				a.logo(href='index.html')
-					img.logo__icon(src='', alt='')
-				nav.main-nav
-					ul.main-nav__list
-						li.main-nav__item
-							a.main-nav__link(href='room-list.html') номера
-						li.main-nav__item
-							a.main-nav__link(href='#') коттедж
-						li.main-nav__item
-							a.main-nav__link(href='#') ресторан
-						li.main-nav__item
-							a.main-nav__link(href='#') отдых
-						li.main-nav__item
-							a.main-nav__link(href='#') контакты
-				.page-header__contacts
-					a.page-header__tel(href='#') +7 812 777-55-88
-					.page-header__address г. Санкт-Петербург, Приморское ш.600
-				a.btn(href='form.html') забронировать
+			.page-header__inner.container-fluid
+				.row 
+					.page-header__nav.col-lg-10
+						a.page-header__logo(href='index.html') 
+							img.logo__icon(src='../img/logo.png', alt='') 
+						nav.main-nav
+							ul.main-nav__list
+								li.main-nav__item
+									a.main-nav__link(href='room-list.html') номера
+								li.main-nav__item
+									a.main-nav__link(href='#') коттедж
+								li.main-nav__item
+									a.main-nav__link(href='#') ресторан
+								li.main-nav__item
+									a.main-nav__link(href='#') отдых
+								li.main-nav__item
+									a.main-nav__link(href='#') контакты
+						.page-header__contacts
+							a.page-header__tel(href='tel:+79118142839') +7 812 777-55-88
+							.page-header__address г. Санкт-Петербург, Приморское ш.600
+					.col-lg-2 
+						a.btn(href='form.html') забронировать
 		main
 			block main
 
 		footer.page-footer
-			.page-footer__inner
-				.page-footer__address г. Санкт-Петербург Приморское ш. 600
-				a.logo(href='#')
-				.page-footer__connect
-					span
-						| +7 812 777-55-88 
-						br
-						| 				info@greenvalley.ru
+			.page-footer__inner.container-fluid
+				.row
+					.col-sm-3
+						p.page-footer__address г. Санкт-Петербург Приморское ш. 600
+					.col-sm-offset-1.col-sm-4
+						a.logo(href='#')
+					.col-sm-offset-1.col-sm-3
+						.page-footer__connect
+							span
+								| +7 812 777-55-88 
+								br
+								| 				info@greenvalley.ru

@@ -3,131 +3,103 @@ extends extends/layout.pug
 
 block main
 	.promo
-		.promo__inner
-			h1.promo__title Семейный отдых на берегу Финского залива
-			span.promo__text
-				| Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьёй.
+		.promo__inner.container-fluid
+			.row
+				h1.promo__title Семейный отдых на берегу Финского залива
+				span.promo__text
+					| Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьёй.
 	.intro
-		.intro__inner
-			h2.intro__title Здоровый отдых
-			p.intro__text
-				| Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. 
-				br
-				| 				Почувствуйте отдых!
-			ul.intro__advantages
-				li.advantages__item бассейн
-				li.advantages__item спортивная площадка
-				li.advantages__item бильярд
-				li.advantages__item спа
-				li.advantages__item бани
-				li.advantages__item анимация
+		.intro__inner.container-fluid
+			.row
+				h2.intro__title Здоровый отдых
+				.col-lg-offset-3.col-lg-6
+					p.intro__text
+						| Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых!
+				.col-lg-offset-2.col-lg-8
+					ul.intro__advantages
+						li.advantages__item бассейн
+						li.advantages__item спортивная площадка
+						li.advantages__item бильярд
+						li.advantages__item спа
+						li.advantages__item бани
+						li.advantages__item анимация
 	section.gallery
-		.gallery__inner
-			img.gallery__full-photo(src='img/gallery-full-photo.png', alt='')
-			.gallery__slider
-				.gallery__item
-					img(src='', alt='')
-				.gallery__item
-					img(src='', alt='')
-				.gallery__item
-					img(src='', alt='')
-				.gallery__item
-					img(src='', alt='')
-				.gallery__item
-					img(src='', alt='')
-				.gallery__item
-					img(src='', alt='')
-				.gallery__item
-					img(src='', alt='')
+		.gallery__inner.container-fluid
+			.row
+				img.gallery__full-photo(src='../img/gallery-full-photo.jpg', alt='')
+				.gallery__slider
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
+					.gallery__item
+						img(src='', alt='')
 	section.reviews
-		.reviews__inner
-			h2.reviews__title Отзывы
-			.reviews__slider
-				blockquote.reviews__item
-					cite.reviews__author Екатерина В.
-					p.reviews__text
-						| Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!
-					span
-						| Дата отдыха: 
-						br
-						| 						01.06.2015 - 08.06.2015
-				blockquote.reviews__item
-					cite.reviews__author Екатерина В.
-					p.reviews__text
-						| Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.
-					span
-						| Дата отдыха: 
-						br
-						| 						15.05.2015 - 20.05.2015
-				blockquote.reviews__item
-					cite.reviews__author Екатерина В.
-					p.reviews__text
-						| Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!
-					span
-						| Дата отдыха: 
-						br
-						| 						01.06.2015 - 08.06.2015
-				blockquote.reviews__item
-					cite.reviews__author Екатерина В.
-					p.reviews__text
-						| Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.
-					span
-						| Дата отдыха: 
-						br
-						| 						15.05.2015 - 20.05.2015
-				blockquote.reviews__item
-					cite.reviews__author Екатерина В.
-					p.reviews__text
-						| Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!
-					span
-						| Дата отдыха: 
-						br
-						| 						01.06.2015 - 08.06.2015
-				blockquote.reviews__item
-					cite.reviews__author Екатерина В.
-					p.reviews__text
-						| Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.
-					span
-						| Дата отдыха: 
-						br
-						| 						15.05.2015 - 20.05.2015
+		.reviews__inner.container-fluid
+			.row
+				h2.reviews__title Отзывы
+				.reviews__slider
+					blockquote.reviews__item.col-lg-offset-1.col-lg-5
+						cite.reviews__author Екатерина В.
+						p.reviews__text
+							| Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!
+						span
+							| Дата отдыха: 
+							br
+							| 						01.06.2015 - 08.06.2015
+					blockquote.reviews__item.col-lg-5.col-lg-offset-1
+						cite.reviews__author Екатерина В.
+						p.reviews__text
+							| Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.
+						span
+							| Дата отдыха: 
+							br
+							| 						15.05.2015 - 20.05.2015
 			a.reviews__btn-all(href='#') все отзывы
 	section.special
-		.special__inner
-			h2.special__title Акции и предложения
-			.special__box
-				span.special__box-title скидки в мае
-				p.special__box-text Забронируйте номер или коттедж любой категории до 31 июля и получите скидку 10%!
-			.special__box
-				span.special__box-title скидки в мае
-				p.special__box-text Забронируйте номер или коттедж любой категории до 31 июля и получите скидку 10%!
-			.special__pages
+		.special__inner.container-fluid
+			.row
+				h2.special__title Акции и предложения
+				.special__box.col-lg-12
+					span.special__box-title скидки в мае
+					p.special__box-text Забронируйте номер или коттедж любой категории до 31 июля и получите скидку 10%!
+				.special__pages
 	section.location
-		.location__inner
-			h2.location__title Как до нас добраться
-			.location__map
-			.location__get
-				span.location__get-bus автобусы
-				p.get-bus__list
-					| № 211 от станции метро "Черная речка" до остановки "Санаторий Репино"
-					br
-					| 					№ 305К от станции метро "Старая деревня"
-					br
-					| 					№680К от станции метро "Проспект Просвещения"
-					br
-					| 					№ 400К от станции метро "Площадь Ленина"
-			.location__get
-				p.location__get-train электропоезд
-				p.get-train__text
-					| Электропоезд Выборгского направления от Финляндского вокзала Санкт-Петербурга до платформы "Репино"
+		.location__inner.container-fluid
+			.row
+				h2.location__title Как до нас добраться
+				.location__map.col-lg-12
+				.location__get
+					span.location__get-bus автобусы
+					p.get-bus__list
+						| № 211 от станции метро "Черная речка" до остановки "Санаторий Репино"
+						br
+						| 					№ 305К от станции метро "Старая деревня"
+						br
+						| 					№680К от станции метро "Проспект Просвещения"
+						br
+						| 					№ 400К от станции метро "Площадь Ленина"
+				.location__get
+					p.location__get-train электропоезд
+					p.get-train__text
+						| Электропоезд Выборгского направления от Финляндского вокзала Санкт-Петербурга до платформы "Репино"
 	section.offers
-		.offers__inner
-			h2.offers__title Где вы хотите отдохнуть?
-			.offers__hotel
-				img.hotel__img(src='img/standart.png', alt='')
-				h3.hotel__name В отеле
-				span.hotel__price от 4000 руб./сутки
-			.offers__cottage
-				img.cottage__img(src='img/cottage.png', alt='')
-				h3.cottage__name В коттедже
-				span.cottage__price от 6800 руб./сутки
+		.offers__inner.container-fluid
+			.row
+				h2.offers__title Где вы хотите отдохнуть?
+				.offers__hotel.col-lg-offset-2.col-lg-4
+					img.hotel__img(src='', alt='')
+					h3.hotel__name В отеле
+					span.hotel__price от 4000 руб./сутки
+				.offers__cottage.col-lg-4.col-offset-2
+					img.cottage__img(src='', alt='')
+					h3.cottage__name В коттедже
+					span.cottage__price от 6800 руб./сутки

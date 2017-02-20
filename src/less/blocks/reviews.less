@@ -1,5 +1,60 @@
 .reviews {
-	&__title {
-		.title;
-	}
+	background-image: url(../../img/reviews-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+		&__title {
+			.title;
+			color: #ffffff;
+			width: 100%;
+		}
+
+		&__item {
+			background-color: #ffffff;
+			margin: 30px 0 35px;
+			text-align: center;
+			padding: 60px 40px 25px;
+			width: 100%;
+			box-sizing: border-box;
+			position: relative;
+		}
+
+		&__photo {
+			position: absolute;
+			top: -30px;
+			left: 200px;
+		}
+
+		&__author {
+			display: block;
+			font-size: @h3-size;
+			font-style: normal;
+			font-weight: @h3-weight;
+			letter-spacing: 0.05em;
+		}
+
+		&__text {
+			font-size: @paragraph-text;
+		}
+
+		&__date {
+			font-size: @h3-size;
+			font-style: normal;
+			letter-spacing: 0.05em;
+		}
+
+		&__btn-all {
+			display: inline-block;
+			text-decoration: none;
+			color: #ffffff;
+			margin: 0 auto;
+			letter-spacing: 0.05em;
+			border: 2px solid #ffffff;
+			padding: 8px 20px;
+			border-radius: 50px;
+			margin-bottom: 30px;
+		}
 }
+
+
+

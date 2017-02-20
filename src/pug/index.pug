@@ -7,7 +7,8 @@ block main
 			.row
 				h1.promo__title Семейный отдых на берегу Финского залива
 				span.promo__text
-					| Green Valley - это современная база отдыха в курортном районе для здорового отдыха всей семьёй.
+					| Green Valley - это современная база отдыха
+					| в курортном районе для здорового отдыха всей семьёй.
 	.intro
 		.intro__inner.container-fluid
 			.row
@@ -17,12 +18,24 @@ block main
 						| Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых!
 				.col-lg-offset-2.col-lg-8
 					ul.intro__advantages
-						li.advantages__item бассейн
-						li.advantages__item спортивная площадка
-						li.advantages__item бильярд
-						li.advantages__item спа
-						li.advantages__item бани
-						li.advantages__item анимация
+						li.advantages__item
+							img.advantages__icon(src='../img/adv-pool.png', alt='') 
+							span.advantages__name бассейн
+						li.advantages__item
+							img.advantages__icon(src='../img/adv-sport.png', alt='') 
+							span.advantages__name спортивная площадка
+						li.advantages__item
+							img.advantages__icon(src='../img/adv-billiard.png', alt='')
+							span.advantages__name бильярд
+						li.advantages__item
+							img.advantages__icon(src='../img/adv-spa.png', alt='') 
+							span.advantages__name спа
+						li.advantages__item
+							img.advantages__icon(src='../img/adv-sauna.png', alt='') 
+							span.advantages__name бани
+						li.advantages__item
+							img.advantages__icon(src='../img/adv-animate.png', alt='') 
+							span.advantages__name анимация
 	section.gallery
 		.gallery__inner.container-fluid
 			.row
@@ -46,31 +59,36 @@ block main
 		.reviews__inner.container-fluid
 			.row
 				h2.reviews__title Отзывы
-				.reviews__slider
-					blockquote.reviews__item.col-lg-offset-1.col-lg-5
+				.col-lg-offset-1.col-lg-5
+					blockquote.reviews__item
+						img.reviews__photo(src='../img/reviews-author-1.jpg',  alt='')
 						cite.reviews__author Екатерина В.
 						p.reviews__text
 							| Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!
-						span
+						span.reviews__date
 							| Дата отдыха: 
 							br
 							| 						01.06.2015 - 08.06.2015
-					blockquote.reviews__item.col-lg-5.col-lg-offset-1
+				.col-lg-5
+					blockquote.reviews__item
+						img.reviews__photo(src='../img/reviews-author-2.jpg',  alt='')
 						cite.reviews__author Екатерина В.
 						p.reviews__text
 							| Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.
-						span
+						span.reviews__date
 							| Дата отдыха: 
 							br
 							| 						15.05.2015 - 20.05.2015
-			a.reviews__btn-all(href='#') все отзывы
+			.row
+				a.reviews__btn-all(href='#') все отзывы
 	section.special
 		.special__inner.container-fluid
 			.row
 				h2.special__title Акции и предложения
 				.special__box.col-lg-12
-					span.special__box-title скидки в мае
-					p.special__box-text Забронируйте номер или коттедж любой категории до 31 июля и получите скидку 10%!
+					.special__box-wrap
+						span.special__box-title СКИДКИ В МАЕ
+						p.special__box-text Забронируйте номер или коттедж любой категории до 31 июля и получите скидку 10%!
 				.special__pages
 	section.location
 		.location__inner.container-fluid

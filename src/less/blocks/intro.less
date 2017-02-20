@@ -1,4 +1,12 @@
 .intro {
+
+	&__inner {
+		background-image: url(../../img/intro-bg.jpg);
+		background-repeat: no-repeat;
+		background-size: 894px;
+		background-position: center;
+	}
+
 	&__title {
 		.title;
 		width: 100%;
@@ -12,13 +20,25 @@
 	&__advantages {
 		list-style: none;
 		text-align: center;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 }
 
 .advantages {
+
 	&__item {
 		display: inline-block;
-		padding-right: 25px;
+		vertical-align: top;
+		margin-bottom: 70px;		
+		width: 120px;
+	}
+
+	&__name {
+		display: block;
 	}
 }
 

@@ -1,5 +1,33 @@
 .special {
+
 	&__title {
 		.title;
+		letter-spacing: 0.05em;
+	}
+
+	&__box {
+		background-image: url(../../img/special-bg.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+
+	&__box-wrap {
+		background-color: #ffffff;
+		opacity: 0.9;
+		padding: 10px;
+		margin: 200px 0 20px;
+		width: 26%;
+	}
+
+	&__box-title {
+		color: @accent-color;
+		font-weight: 500;
+		font-size: @h3-size;
+	}
+	
+	&__box-text {
+		color: @text-color;
+		font-weight: 400;
+		font-size: @main-text;
 	}
 }

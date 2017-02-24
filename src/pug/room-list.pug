@@ -1,45 +1,68 @@
 extends extends/layout.pug 
 
+
 block main
 	section.subheader
-		.subheader__inner
-			h1.subheader__title Номера в отеле Green Valley
-			span.subheader__text
-				| Комфорт и живописный вид на Финский залив и сосновый парк. 
-				br
-				| 				4 этажа | 70 номеров
+		.subheader__inner.container-fluid
+			.row
+				h1.subheader__title Номера в отеле Green Valley
+				span.subheader__text
+					| Комфорт и живописный вид на Финский залив и сосновый парк. 
+					br
+					| 				4 этажа | 70 номеров
 	section.categories
-		.categories__inner
-			h2.categories__title Категории
-			.econom
-				h3.econom__title Эконом
-				span.econom__price от 3400 руб./сутки
-				p.econom__description
-					| В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны на проживание 1-2 человек. Часть номеров с видом на Финский залив.
-				a.btn(href='#') забронировать
-				a.more(href='single-room.html') подробнее
-				img.econom__img(src='img/econom.png', alt='')
-			.standart
-				h3.standart__title Стандарт
-				span.standart__price от 4000 руб./сутки
-				p.standart__description
-					| В отеле 20 таких номеров. Рассчитаны на проживание 2-3 человек. Площадь номера 20-25 кв.м., состоит из гостевой и спальной зоны.
-				a.btn(href='#') забронировать
-				a.more(href='single-room.html') подробнее
-				img.standart__img(src='img/standart.png', alt='')
-			.standartplus
-				h3.standartplus__title Стандарт +
-				span.standartplus__price от 4500 руб./сутки
-				p.standartplus__description
-					| В отеле 15 таких номеров. 2-комнатный номер предназначен для проживания 2-4 человек. Площадь номера от 35 кв.м.
-				a.btn(href='#') забронировать
-				a.more(href='single-room.html') подробнее
-				img.standartplus__img(src='img/standart+.png', alt='')
-			.lux
-				h3.lux__title Люкс
-				span.lux__price от 5700 руб./сутки
-				p.lux__description
-					| В отеле 5 таких номера. Просторные номера площадью до 40 кв.м. с видом на Финский залив, выполнен в оригинальном cтиле.
-				a.btn(href='#') забронировать
-				a.more(href='single-room.html') подробнее
-				img.lux__img(src='img/lux.png', alt='')
+		.categories__inner.container-fluid
+			.row
+				h2.categories__title Категории
+				.col-lg-12
+					.econom
+						.row
+							.col-lg-offset-1.col-lg-5
+								h3.econom__title Эконом
+								p.econom__price от 3400 руб./сутки
+								p.econom__description
+									| В отеле 30 таких номеров площадью от 16 до 20 кв.м. 
+									br
+									| Рассчитаны на проживание 1-2 человек.
+									br 
+									| Часть номеров с видом на Финский залив.
+								a.btn(href='#') забронировать
+								a.more(href='single-room.html') подробнее
+							.col-lg-5
+								img.econom__img(src='../img/econom.jpg', alt='')
+				.col-lg-12
+					.standart
+						.row
+							.col-lg-offset-1.col-lg-5
+								h3.standart__title Стандарт
+								p.standart__price от 4000 руб./сутки
+								p.standart__description
+									| В отеле 20 таких номеров. Рассчитаны на проживание 2-3 человек. Площадь номера 20-25 кв.м., состоит из гостевой и спальной зоны.
+								a.btn(href='#') забронировать
+								a.more(href='single-room.html') подробнее
+							.col-lg-5
+								img.standart__img(src='../img/standart.jpg', alt='')
+				.col-lg-12
+					.standartplus
+						.row
+							.col-lg-offset-1.col-lg-5
+								h3.standartplus__title Стандарт +
+								p.standartplus__price от 4500 руб./сутки
+								p.standartplus__description
+									| В отеле 15 таких номеров. 2-комнатный номер предназначен для проживания 2-4 человек. Площадь номера от 35 кв.м.
+								a.btn(href='#') забронировать
+								a.more(href='single-room.html') подробнее
+							.col-lg-5
+								img.standartplus__img(src='../img/standartplus.jpg', alt='')
+				.col-lg-12
+					.lux
+						.row
+							.col-lg-offset-1.col-lg-5
+								h3.lux__title Люкс
+								p.lux__price от 5700 руб./сутки
+								p.lux__description
+									| В отеле 5 таких номера. Просторные номера площадью до 40 кв.м. с видом на Финский залив, выполнен в оригинальном cтиле.
+								a.btn(href='#') забронировать
+								a.more(href='single-room.html') подробнее
+							.col-lg-5
+								img.lux__img(src='../img/lux.jpg', alt='')

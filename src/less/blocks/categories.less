@@ -1,0 +1,51 @@
+.categories {
+
+		&__title {
+			.title;
+			letter-spacing: 0.05em;
+		}
+}
+
+.econom, .standart, .standartplus, .lux {
+	background-color: @background-single-room-color;
+	margin-bottom: 50px;
+
+	&__title {
+		font-family: @logo-text;
+		font-size: 26px;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	&__price {
+		font-weight: @h3-weight;
+		font-size: @small-text;
+		text-align: center;
+	}
+
+	&__description {
+		font-size: @paragraph-text;
+		width: 405px;
+	}
+
+	// &__img {
+	// 	display: block;
+	// }
+
+	& .more {
+		margin-left: 55px;
+	}
+
+	& .btn {
+		background-color: @focus-color;
+		padding: 10px 30px;
+		border-radius: 50px;
+		font-family: @main-text;
+		font-size: @small-text;
+		text-decoration: none;
+		color: @btn-text-color;
+		text-transform: uppercase;
+		display: inline-block;
+		margin-top: 10px;
+	}
+}
